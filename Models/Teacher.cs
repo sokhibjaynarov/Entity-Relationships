@@ -13,7 +13,7 @@ namespace vazifa0224.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public virtual ICollection<Group> Groups { get; }
-        public virtual ICollection<Subject> Subjects { get; }
+        public virtual ICollection<Subject> Subjects { get; set; }
         public Teacher()
         {
             Groups = new List<Group>();
