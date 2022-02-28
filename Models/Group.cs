@@ -10,7 +10,7 @@ namespace vazifa0224.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<Teacher> Teachers { get; }
+        public virtual ICollection<Teacher> Teachers { get; set; }
         public Group()
         {
             Teachers = new List<Teacher>();
